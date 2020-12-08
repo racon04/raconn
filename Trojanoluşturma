@@ -13,7 +13,7 @@ print(banner)
 print("""
 1]Trojan olustur
 2]metasploiti ac""")
-girdi=input("------->""")
+girdi=raw_input("------->""")
 if (girdi==1):
 
          ip=raw_input("ip adresini giriniz------>")
